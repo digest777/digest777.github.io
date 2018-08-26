@@ -1,0 +1,134 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	header .header-content .small-menu-wrap ul.main-menu li
+		margin: 0 10px
+
+	.owl-carousel .slide-wrap
+		max-width: 960px
+
+	.main-content
+		.content-item
+			h2
+				font-size: 40px
+			a
+				max-width: 100%
+				margin-left: 45px
+// ≥992px
++media-breakpoint-down(md)
+	header .header-content .small-menu-wrap ul.main-menu li
+		margin: 0 4px
+
+	.owl-carousel
+		.slide-wrap
+			.slide
+				margin: 200px auto 0
+
+	.main-content
+		padding-bottom: 25px
+		.content-item
+			h2
+				font-size: 30px
+			a
+				margin-left: 0
+
+	footer
+		text-align: center
+		.subscribe-wrap
+			.btn-more
+				margin: 0 auto
+		.service-wrap, .connect-wrap
+			margin-top: 30px
+		.service-wrap
+			p
+				margin: 0
+		.rights
+			&:before
+				left: 15%
+				width: 70%
+
+// ≥768px
++media-breakpoint-down(sm)
+	header
+		.header-content
+			.logo-wrap
+				a.logo
+					img
+						margin-top: -20px
+					p
+						font-size: 24px
+						margin-top: 20px
+
+	.owl-carousel
+		.owl-dots
+			text-align: center
+			.owl-dot
+				width: 12px
+				height: 12px
+				background: rgba(0,0,0,.5)
+				border-radius: 50%
+				margin: 5px
+				+mt(.2s)
+			.active
+				background-color: $accent
+				outline: none
+		.owl-nav
+			display: none
+		.slide-wrap
+			.slide
+				margin: 100px auto 0
+
+	.main-content
+		.content-item
+			margin: 30px 0 15px
+			h2, a
+				text-align: center
+			h2
+				padding-right: 0
+
+	.text-content, .events-wrap
+		h3
+			margin-top: 10px
+	.events-wrap
+		padding-bottom: 10px
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+	header
+		.header-content
+			.logo-wrap
+				a.logo
+					img
+						margin-top: 20px
+					p
+						display: none
+
+	.toggle-mnu
+		position: absolute
+		right: 40px
+
+	form
+		h2
+			text-align: center
+			line-height: 30px
+			font-size: 22px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
